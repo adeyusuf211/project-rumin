@@ -31,7 +31,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <span className="text-3xl font-bold">Remin</span>
+              <span className="text-3xl font-bold">Rumin</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
