@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
@@ -18,7 +17,7 @@ const Sidebar = () => {
   };
 
   const activeLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg bg-gray-100  text-md m-2";
+    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg bg-gray-100  text-md m-2 text-white";
   const normalLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2";
 
@@ -32,7 +31,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <span className="text-3xl font-bold">ReDash</span>
+              <span className="text-3xl font-bold">Remin</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
