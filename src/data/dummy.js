@@ -573,13 +573,6 @@ export const cartData = [
     category: 'Vegetable Item',
     price: '$450',
   },
-  {
-    image:
-      product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
-  },
 ];
 
 export const chatData = [
@@ -843,6 +836,10 @@ export const themeColors = [
   {
     color: '#FB9678',
     name: 'orange-theme',
+  },
+  {
+    color: '#0E930E',
+    name: 'green-theme-two',
   },
 ];
 

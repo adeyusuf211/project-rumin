@@ -27,35 +27,37 @@ const ThemeSettings = () => {
         <div className="flex-col border-t-1 border-color p-4 ml-4">
           <p className="font-semibold text-xl ">Theme Option</p>
 
-          <div className="mt-4">
-            <input
-              type="radio"
-              id="light"
-              name="theme"
-              value="Light"
-              className="cursor-pointer"
-              onChange={setMode}
-              checked={currentMode === "Light"}
-            />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-            <label htmlFor="light" className="ml-2 text-md cursor-pointer">
-              Light
-            </label>
-          </div>
-          <div className="mt-2">
-            <input
-              type="radio"
-              id="dark"
-              name="theme"
-              value="Dark"
-              onChange={setMode}
-              className="cursor-pointer"
-              checked={currentMode === "Dark"}
-            />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-            <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
-              Dark
-            </label>
+          <div className="flex justify-between mt-4 cursor-pointer gap-2">
+            <div className="p-3 w-full rounded-sm border dark:border-gray-500 text-black dark:text-white dark:hover:bg-gray-500 hover:bg-gray-200 transition-all duration-300 ease-in">
+              <input
+                type="radio"
+                id="light"
+                name="theme"
+                value="Light"
+                className="hidden"
+                onChange={setMode}
+                checked={currentMode === "Light"}
+              />
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+              <label htmlFor="light" className="ml-2 text-md cursor-pointer">
+                Light
+              </label>
+            </div>
+            <div className="p-3 w-full rounded-sm border dark:border-gray-500 text-black dark:text-white dark:hover:bg-gray-500 hover:bg-gray-200 transition-all duration-300 ease-in">
+              <input
+                type="radio"
+                id="dark"
+                name="theme"
+                value="Dark"
+                onChange={setMode}
+                className="hidden"
+                checked={currentMode === "Dark"}
+              />
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+              <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
+                Dark
+              </label>
+            </div>
           </div>
         </div>
         <div className="p-4 border-t-1 border-color ml-4">

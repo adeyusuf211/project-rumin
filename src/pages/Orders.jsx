@@ -16,9 +16,11 @@ import {
 
 import { ordersData, contextMenuItems, ordersGrid } from "../data/dummy";
 import { Header } from "../components";
+import { useStateContext } from "../contexts/ContextProvider";
 
 const Orders = () => {
   const editing = { allowDeleting: true, allowEditing: true };
+  const {currentMode} = useStateContext();
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
       <Header category="Page" title="Orders" />
@@ -31,6 +33,7 @@ const Orders = () => {
         allowPdfExport
         contextMenuItems={contextMenuItems}
         editSettings={editing}
+        background={currentMode === 'Dark' ? '#000000' : '#ffffff'}
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
