@@ -147,7 +147,7 @@ const Ecommerce = () => {
         </div>
       </div>
 
-      <div className="w-full flex my-5 gap-5">
+      <div className="w-full flex lg:flex-nowrap flex-wrap my-5 gap-5">
         <div
           className=" rounded-2xl w-full p-4"
           style={{ backgroundColor: currentColor }}
