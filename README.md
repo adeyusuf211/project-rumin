@@ -4,4 +4,4 @@ Ini adalah sebuah template website untuk dashboard admin yang dibuat dengan meng
 
 ## Tampilan Website
 
-![tag-input](web1.png)
+![rumin](rumin.png)
